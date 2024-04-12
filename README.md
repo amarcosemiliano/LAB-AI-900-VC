@@ -17,5 +17,5 @@ Ao iniciarmos o Lab, criamos um recurso de serviços de IA do Azure e utilizamos
 Após execução das etapas supracitadas, foram obtidos os seguintes resultados:
 
 ### Atributos detectados:
-- Imagem 1: Porque Deus amou ao mundo de tal maneira que deu o seu Filho unigênito, para que todo o que nele crê não pereça, mas tenha a vida eterna. João3:16 (Resultados anexos).
-- Imagem 2: Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas. MATEUS6:33 (Resultados anexos).
+- **Imagem 1:** Porque Deus amou ao mundo de tal maneira que deu o seu Filho unigênito, para que todo o que nele crê não pereça, mas tenha a vida eterna. João3:16 (Resultados anexos).
+- **Imagem 2:** Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas. MATEUS6:33 (Resultados anexos).
