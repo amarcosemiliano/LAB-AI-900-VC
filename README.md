@@ -2,46 +2,20 @@
 Neste LAB, praticamos a criação de reconhecimento facial, identificação de dados em documentos e também o reconhecimento de elementos em imagens.
 
 # Desenvolvimento do Lab
-Antes iniciarmos o Lab, no Azure Machine Learning Studio, acessamos a página Automated ML (em Authoring). Posteriormente, criamos um novo trabalho de ML automatizado, respeitando as seguintes etapas:
+Ao iniciarmos o Lab, criamos um recurso de serviços de IA do Azure e utilizamos o OCR do Azure AI Vision para reconhecimento de textos em imagens, respeitando as seguinte etapas:
 
-### Configurações básicas:
-- **Nome do trabalho:** mslearn-bike-automl
-- **Novo nome do experimento:** mslearn-bike-rental
-- **Descrição:** Aprendizado de máquina automatizado para previsão de aluguel de bicicletas
-- **Marcadores:** nenhum
+### Conectar o recurso de serviço de IA do Azure ao Vision Studio:
+- Acessar o [Vision Studio](https://portal.vision.cognitive.azure.com)
+- Selecionar o recurso criado em **Exibir todos os recursos**
 
-### Tipo de tarefa e dados:
-- **Tarefa:** Regressão
-- **Conjunto de dados:** Aluguel de bicicletas
-- **Tipo de dados:** Tabular
-- **Fonte de dados:** [URL da Web](https://aka.ms/bike-rentals)
-
-### Configuração da tarefa:
-- **Coluna de destino:** Aluguéis (inteiro)
-- **Métrica primária:** raiz do erro quadrático médio normalizado
-- **Modelos permitidos:** RandomForest e LightGBM
-
-### Limites:
-- **Máximo de testes:** 3
-- **Máximo de testes simultâneos:** 3
-- **Máximo de nós:** 3
-- **Limite de pontuação da métrica:** 0,085 (finalizar o trabalho caso a pontuação da métrica de erro quadrático médio normalizado for igual ou inferior a 0,085).
-- **Tempo limite:** 15
-- **Tempo limite de iteração:** 15
+### Extrair texto de imagens no Vision Studio:
+- Selecionar Reconhecimento Óptico de Caracteres e o bloco **Extrair texto de imagens**
+- Marcar a caixa de política de uso do recurso criado na seção **Experimente**
+- Fazer o upload dos arqquivos no computador na seçaão **Experimente**
 
 # Resultados
-Após execução das etapas supracitadas, foram encontradas as seguintes métricas:
+Após execução das etapas supracitadas, foram obtidos os seguintes resultados:
 
-### Métricas:
-- **Variância explicada:** 0.78586
-- **Erro absoluto de média:** 187.87
-- **Erro de percentual absoluto de média:** 37.053
-- **Erro mediano absoluto:** 115.76
-- **Erro absoluto de média normalizado:** 0.055126
-- **Erro mediano absoluto normalizado:** 0.033967
-- **Erro de quadrado de média de raiz normalizado:** 0.089914
-- **Erro de log de quadrado de média raiz normalizado:** 0.057918
-- **Pontuação R2:** 0.78586
-- **Erro de raiz do valor quadrático médio:** 306.43
-- **Erro de log de raiz do valor quadrático médio:** 0.40752
-- **Correlação de Spearman:** 0.91851
+### Atributos detectados:
+- Imagem 1: Porque Deus amou ao mundo de tal maneira que deu o seu Filho unigênito, para que todo o que nele crê não pereça, mas tenha a vida eterna. João3:16 (Resultados anexos).
+- Imagem 2: Busquem, pois, em primeiro lugar o Reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas. MATEUS6:33 (Resultados anexos).
